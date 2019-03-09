@@ -1,0 +1,24 @@
+.card {
+  width: 200px;
+  max-height: 480px; 
+}
+
+label {
+  font-size: 13px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+
+.nav-item:hover {
+  background-color: #13dbdb;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.col-8 {
+  display: inline-block;
+  margin: auto 45px;
+  text-align: center;
+  min-width: 120px;
+}

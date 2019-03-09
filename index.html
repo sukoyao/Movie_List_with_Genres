@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie List with Genres</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-3">
+        <ul id="genre-list" class="nav nav-pills flex-column">
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="1">Action</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="2">Adventure</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="3">Animation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="4">Comedy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="5">Crime</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="6">Documentary</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="7">Drama</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="8">Family</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="9">Fantasy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="10">History</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="11">Horror</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="12">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="13">Mystery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="14">Romance</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="15">Science Fiction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="16">TV Movie</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="17">Thriller</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="18">War</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-genre="19">Western</a></li>
+        </ul>
+      </div>
+      <div class="col-9" id="data-panel">
+        <!-- display movie here -->
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
