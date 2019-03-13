@@ -28,6 +28,15 @@
     "19": "Western"
   }
 
+  //show genrelist
+  genreList.innerHTML = Object.values(genres).map((item, index) =>
+    `
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-genre="${index + 1}">${item}</a>
+      </li>
+    `
+  ).join('')
+
   axios
     .get(INDEX_URL)
     .then(response => {
@@ -41,18 +50,17 @@
   genreList.addEventListener('click', event => {
     if (event.target.matches('.nav-link')) {
       const movie = []
-      for (i of data) {
-        if (i.genres.includes(parseInt(event.target.dataset.genre))) {
+      data.filter(i => {
+        if (i.genres.includes(parseInt(event.target.dataset.genre)))
           movie.push(i)
-        }
-      }
+      })
       displayMovieGenre(movie)
     }
   })
 
   function displayMovieGenre(data) {
     let htmlContent = ''
-    data.forEach(function (item, index) {
+    data.map((item) => {
       htmlContent += `
         <div class="col-8 col-md-2">
           <div class="card mb-2">
@@ -60,6 +68,7 @@
             <div class="card-body movie-item-body">
               <h5 class="card-title">${item.title}</h5>
       `
+
       // genre number change to str 
       let displayGenre = item.genres
       for (genreNum of displayGenre) {
